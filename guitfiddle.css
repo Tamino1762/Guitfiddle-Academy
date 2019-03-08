@@ -1,0 +1,387 @@
+header {
+
+    background-image: url(pics/head1.jpg);
+    background-repeat: no-repeat;
+    height: 200px;
+    padding-left: 15em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    text-align: center;
+    padding-bottom: 1em;
+
+}
+
+body {
+    background-image: linear-gradient(to top, #fff, #90c7e3);
+    /*    display: block;*/
+    background-repeat: no-repeat;
+}
+
+.head {
+    color: white;
+    text-align: center;
+    letter-spacing: .3em;
+    font-family: 'Kaushan Script', cursive;
+    /*    padding-right: 2em;*/
+    font-size: 2.8em;
+    font-weight: bold;
+    background-color: #000033;
+    text-shadow: 1px 1px 2px lightblue;
+}
+
+.container {
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    /*    background-color: aqua;*/
+}
+
+#mCalendar {
+    display: none;
+}
+
+#tCalendar {
+    display: none;
+}
+
+#calendar {
+    text-align: center;
+}
+
+.twitter {
+    text-align: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h6,
+h5 {
+    text-align: center;
+    font-family: cursive;
+}
+
+a:link {
+    text-decoration: none;
+    color: mediumpurple;
+}
+
+ul a:hover {
+    text-decoration: none;
+    color: darkcyan;
+}
+
+a:hover {
+    text-decoration: none;
+    color: darkcyan;
+}
+
+a:active {
+    text-decoration: none;
+    color: darkcyan;
+}
+
+p {
+    text-align: center;
+    font-family: cursive;
+}
+
+li {
+    display: inline;
+    text-decoration: none;
+}
+
+.lessons {
+    text-decoration: none;
+    text-align: center;
+    font-family: cursive;
+    font-weight: 500;
+    font-size: 1.5em;
+
+}
+
+
+#white {
+    padding-top: 2em;
+}
+
+#wrapper {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    color: #3f2860;
+    /*    background-color: #f5f5f5;*/
+    /*
+    min-width: 550px;
+    max-width: 1280px;
+*/
+    border: outset black 2px;
+    border-radius: 3px;
+    box-shadow: 5px 5px 5px #666;
+    display: block;
+}
+
+h1 {
+    font-family: 'Book Antiqua', 'Palatino Linotype', Palatino, serif;
+    font-weight: bolder;
+    color: darkblue;
+}
+
+footer {
+    font-style: italic;
+    text-align: center;
+}
+
+.copy {
+    font-size: small;
+}
+
+blockquote {
+    text-align: center;
+    font-family: cursive;
+    display: block;
+}
+
+#mainpic {
+    float: left;
+    padding-bottom: 1em;
+    padding-left: 2em;
+    padding-top: 2em;
+}
+
+#map {
+    text-align: center;
+}
+
+#mobile {
+    display: none;
+    text-align: center;
+}
+
+#desktop {
+    text-align: center;
+}
+
+/*
+#map {
+    padding-left: 27em;
+}
+*/
+
+#faq {
+    text-align: left;
+}
+
+.help {
+    font-family: cursive;
+    text-align: center;
+}
+
+#mapLink {
+    display: none;
+}
+
+figure {
+    /*    position: absolute;*/
+    float: right;
+    left: 280px;
+    opacity: .25;
+    padding: 5em 20em 5em 0em;
+}
+
+#pics ul {
+    width: 300px;
+    list-style: none;
+}
+
+#pics li {
+    display: inline-block;
+    /*    float: left;*/
+    padding: 10px;
+}
+
+#pics img {
+    border: 0;
+}
+
+#pics a {
+    text-decoration: none;
+    color: green;
+    font-style: italic;
+}
+
+#pics span {
+    position: absolute;
+    left: -1000px;
+    opacity: 0;
+    transition: opacity 3s ease-in-out;
+}
+
+#pics a:hover span {
+    position: fixed;
+    top: 16px;
+    left: 320px;
+    opacity: 1;
+}
+#key {
+    display: block;
+}
+#submit {
+    padding: 0 4em 0 4em;
+    border: solid black .1em;
+    font-weight: 500;
+}
+#reset {
+    padding: 0 4em 0 4em;
+    border: solid black .1em;
+    font-weight: 500;
+}
+.keyPage {
+    text-align: left;
+}
+
+@media only screen and (max-width: 64em) {
+    #pics figure {
+        display: none;
+    }
+
+    header {
+        height: auto;
+        background-image: none;
+        padding: 0;
+    }
+
+    h1 {
+        letter-spacing: .1em;
+    }
+
+    #main {
+        display: none;
+    }
+
+    #map {
+        display: none;
+    }
+
+    #mapLink {
+        display: block;
+        text-align: center;
+    }
+
+    #pics span {
+        display: none;
+    }
+
+    #calendar {
+        display: none;
+    }
+    #mCalendar {
+        display: none;
+    }
+    #tCalendar {
+        display: inline;
+        text-align: center;
+    }
+
+
+    @media only screen and (max-width: 36em) {
+        main {
+            padding: 0.1em 1em 0.1em 1em;
+            font-size: 90%;
+            text-align: left;
+            font-family: sans-serif;
+        }
+
+        h1 {
+            font-size: 2em;
+        }
+
+        #pics figure {
+            display: none;
+        }
+
+        header {
+            height: auto;
+            background-image: none;
+            padding: 0;
+        }
+
+        #main {
+            display: none;
+        }
+
+        #map {
+            display: none;
+        }
+
+        #mapLink {
+            display: block;
+            text-align: center;
+        }
+
+        #pics span {
+            display: none;
+        }
+
+        footer {
+            display: none;
+        }
+
+        #mobile {
+            display: inline;
+            border: solid black 1px;
+            background-color: lightblue;
+            border: outset 2px #cccccc;
+            border-radius: 5px;
+
+        }
+
+        #desktop {
+            display: none;
+        }
+
+        #mainpic {
+            display: none;
+        }
+
+        .head {
+            background: none;
+            color: black;
+        }
+
+        #wrapper {
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            color: #3f2860;
+            background-color: #f5f5f5;
+            text-align: left;
+            border: none;
+            display: inline-block;
+            box-shadow: none;
+        }
+
+        box li {
+            text-align: left;
+        }
+
+        ul {
+            text-align: left;
+        }
+
+        #calendar {
+            display: none;
+        }
+
+        #tCalendar {
+            display: none;
+        }
+
+        #mCalendar {
+            display: inline;
+            text-align: center;
+        }
+    }

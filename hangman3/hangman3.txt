@@ -1,0 +1,26 @@
+// Draw squares for secret word & hide letters
+
+for(var i = 0; i < randomWord.length; i++) {
+
+        $('#container').append('<div class="letter ' + i + '"></div>');
+
+        $('#container').find(":nth-child(" + (i + 1) + ")").text(randomWordArray[i]);
+
+        $(".letter").css("color", "#4ABDAC");
+
+    }
+// Check if clicked letter is in secret word
+
+var userGuess = $(this).text();
+
+        for (var i = 0; i < randomWord.length; i++) {
+
+            if (userGuess === randomWord.charAt(i)) {
+                
+                $('#container').find(":nth-child(" + (i + 1) + ")").css("color", "#EFEFEF").addClass("winner");
+
+                matchFound = true;
+
+            }
+
+        }
